@@ -1,0 +1,144 @@
+Algoritmo Vacusys
+	Definir  Categoria Como Entero	//Categoría: Etapas de la vida, situaciones especiales y grupos específicos
+	Dimension Dias[5]
+	Dimension Horarios[2] 
+	Definir diaSeleccionado, horaSeleccionada Como Caracter
+	
+	//Menu
+	Repetir
+		Escribir 'Que desea hacer?'
+		Escribir '1- Información de vacunas obligatorias'
+		Escribir '2- Reservar turno en vacunatorio"
+		Escribir '3- Salir'
+		Leer Menu
+		
+		//Vacunas obligatorias	
+		Si Menu = 1 Entonces
+			Escribir 'Ingrese dentro de cuál categoría se encuentra:'
+			Escribir '1- Recién nacido'
+			Escribir '2- 2 meses'
+			Escribir '3- 3 meses'
+			Escribir '4- 4 meses'
+			Escribir '5- 5 meses'
+			Escribir '6- 6 meses'
+			Escribir '7- 12 meses'
+			Escribir '8- 15 meses'
+			Escribir '9- 15-18 meses'
+			Escribir '10- 18 meses'
+			Escribir '11- 24 meses'
+			Escribir '12- 5 años'
+			Escribir '13- 11 años'
+			Escribir '14- A partir de los 15 años'
+			Escribir '15- Adultos'
+			Escribir '16- Embarazadas'
+			Escribir '17- Puerperio'
+			Escribir '18- Personal de Salud'
+			Leer Categoria
+	
+			Escribir 'Deberá aplicarse las siguientes vacunas:'
+			Segun Categoria Hacer
+			1:	//Recién nacido
+				Escribir '* BCG: única dosis (antes de egresar de la maternidad).'
+				Escribir '* Hepatitis B: dosis neonatal (en las primeras 12 horas de vida).'
+			2:	//2 meses
+				Escribir '* Neumococo Conjugada 13 valente: 1ra dosis.'
+				Escribir '* Quíntuple o Pentavalente: 1ra dosis.'
+				Escribir '* IPV: 1ra dosis.'
+				Escribir '* Rotavirus: 1ra dosis (antes de 3,5 meses de vida).'
+			3:	//3 meses
+				Escribir '* Meningococo ACYW: 1ra dosis.'
+			4:	//4 meses
+				Escribir '* Neumococo Conjugada 13 valente: 2da dosis.'
+				Escribir '* Quíntuple o Pentavalente: 2da dosis.'
+				Escribir '* IPV: 2da dosis.'
+				Escribir '* Rotavirus: 2da dosis (antes de 6 meses de vida).'
+			5:	//5 meses
+				Escribir '* Meningococo ACYW: 2da dosis.'
+			6:	//6 meses
+				Escribir '* Quíntuple o Pentavalente: 3ra dosis.'
+				Escribir '* IPV: 3ra dosis.'
+				Escribir '* Antigripal: dosis anual (2 dosis de la vacuna separadas al menos cuatro semanas).'
+			7:	//12 meses
+				Escribir '* Neumococo Conjugada 13 valente: refuerzo.'
+				Escribir '* Antigripal: dosis anual (2 dosis de la vacuna separadas al menos cuatro semanas).'
+				Escribir '* Hepatitis A: única dosis.'
+				Escribir '* Triple Viral: 1ra dosis.'
+			8:	//15 meses
+				Escribir '* Meningococo ACYW: refuerzo.'
+				Escribir '* Antigripal: dosis anual (2 dosis de la vacuna separadas al menos cuatro semanas).'
+				Escribir '* Varicela: 1ra dosis.'
+			9:	//15-18 meses
+				Escribir '* Quíntuple o Pentavalente: 1er refuerzo.'
+				Escribir '* Antigripal: dosis anual (2 dosis de la vacuna separadas al menos cuatro semanas).'
+			10:	//18 meses
+				Escribir '* Antigripal: dosis anual (2 dosis de la vacuna separadas al menos cuatro semanas).'
+				Escribir '* Fiebre Amarilla: 1ra dosis.'
+			11:	//24 meses
+				Escribir '* Antigripal: dosis anual (2 dosis de la vacuna separadas al menos cuatro semanas).'
+			12:	//5 años
+				Escribir '* IPV: 1er refuerzo.'
+				Escribir '* Antigripal: dosis anual (recomendada a personas con factores de riesgo y adultos de 65 años o más).'
+				Escribir '* Triple Viral: 2da dosis.'
+				Escribir '* Varicela: 2da dosis.'
+				Escribir '* Triple Bacteriana Celular: 2do refuerzo.'
+			13:	//11 años
+				Escribir '* Hepatitis B: iniciar o completar esquema (en caso de tener que iniciar: aplicar 1ra dosis, 2da dosis al mes de la 1ra, y 3ra dosis a los 6 meses de la 1ra).'
+				Escribir '* Meningococo ACYW: única dosis.'
+				Escribir '* Antigripal: dosis anual (recomendada a personas con factores de riesgo y adultos de 65 años o más).'
+				Escribir '* Triple Viral: iniciar o completar esquema (si no hubiera recibido dos dosis de triple viral + 1 dosis de doble viral, después del año de vida para los nacidos después de 1965).'
+				Escribir '* Triple Bacteriana Acelular: refuerzo.'
+				Escribir '* Virus Papiloma Humano: 2 dosis (varones y mujeres deben recibir 2 dosis separadas por un intervalo mínimo de 6 meses).'
+				Escribir '* Fiebre Amarilla: refuerzo (residentes en zona de riesgo si la 1ra dosis la recibió antes de los 2 años).'
+			14:	//A partir de los 15 años
+				Escribir '* Hepatitis B: iniciar o completar esquema (en caso de tener que iniciar: aplicar 1ra dosis, 2da dosis al mes de la 1ra, y 3ra dosis a los 6 meses de la 1ra).'
+				Escribir '* Antigripal: dosis anual (recomendada a personas con factores de riesgo y adultos de 65 años o más).'
+				Escribir '* Triple Viral: iniciar o completar esquema (si no hubiera recibido dos dosis de triple viral + 1 dosis de doble viral, después del año de vida para los nacidos después de 1965).'
+				Escribir '* Fiebre Hemorrágica Argentina: única dosis (residentes y/o trabajadores con riesgo ocupacional en zona de riesgo).'			
+			15:	//Adultos
+				Escribir '* Hepatitis B: iniciar o completar esquema (en caso de tener que iniciar: aplicar 1ra dosis, 2da dosis al mes de la 1ra, y 3ra dosis a los 6 meses de la 1ra).'
+				Escribir '* Neumococo Conjugada 13 valente: esquema secuencial.'
+				Escribir '* Doble Bacteriana: refuerzo cada 10 años.'
+				Escribir '* Fiebre Hemorrágica Argentina: única dosis (residentes y/o trabajadores con riesgo ocupacional en zona de riesgo).'			
+			16:	//Embarazadas
+				Escribir '* Hepatitis B: iniciar o completar esquema (en caso de tener que iniciar: aplicar 1ra dosis, 2da dosis al mes de la 1ra, y 3ra dosis a los 6 meses de la 1ra).'	
+				Escribir '* Antigripal: una dosis (en cualquier trimestre de la gestación).'
+				Escribir '* Triple Bacteriana Acelular: una dosis (a partir de la semana 20 de gestación).'
+			17:	//Puerperio
+				Escribir '* Hepatitis B: iniciar o completar esquema (en caso de tener que iniciar: aplicar 1ra dosis, 2da dosis al mes de la 1ra, y 3ra dosis a los 6 meses de la 1ra).'		
+				Escribir '* Antigripal: una dosis (si no la hubiesen recibido durante el embarazo).'
+				Escribir '* Triple Viral: iniciar o completar esquema (si no hubiera recibido dos dosis de triple viral + 1 dosis de doble viral, después del año de vida para los nacidos después de 1965).'
+			18:	//Personal de salud
+				Escribir '* Hepatitis B: iniciar o completar esquema (en caso de tener que iniciar: aplicar 1ra dosis, 2da dosis al mes de la 1ra, y 3ra dosis a los 6 meses de la 1ra).'			
+				Escribir '* Antigripal: dosis anual.'
+				Escribir '* Triple Viral: iniciar o completar esquema (si no hubiera recibido dos dosis de triple viral + 1 dosis de doble viral, después del año de vida para los nacidos después de 1965).'
+				Escribir '* Triple Bacteriana Acelular: una dosis (personal que asista menos de 12 meses, revacunar cada 5 años).'			
+			FinSegun
+		FinSi
+		
+		//Reservar turno
+		Si Menu = 2 Entonces			
+			Dias[1] <- 'Lunes'
+			Dias[2] <- 'Martes'
+			Dias[3] <- 'Miércoles'
+			Dias[4] <- 'Jueves'
+			Dias[5] <- 'Viernes'
+					
+			Horarios[1] <- "8:00 - 13:00"
+			Horarios[2] <- "14:00 - 17:00"
+			
+			Escribir 'Seleccione el día para el turno:'
+			Para i <- 1 Hasta 5
+				Mostrar i, "- ", Dias[i]
+			Fin Para
+			Leer diaSeleccionado
+				
+			Escribir  'Seleccione la hora para el turno:'
+			Para j <- 1 Hasta 2
+				Mostrar j, "- ", Horarios[j]
+			Fin Para
+			Leer horaSeleccionada
+			
+			Escribir 'Usted ha reservado el siguiente turno: Día: ', Dias[diaSeleccionado], ', Hora: ', Horarios[horaSeleccionada]						
+		FinSi		
+	Hasta Que Menu = 3
+FinAlgoritmo
